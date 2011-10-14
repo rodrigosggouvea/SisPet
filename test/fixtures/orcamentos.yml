@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome_empresa: MyString
+  cnpj_empresa: MyString
+  valor: 1.5
+  data: 2011-08-06
+  descricao: 
+
+two:
+  nome_empresa: MyString
+  cnpj_empresa: MyString
+  valor: 1.5
+  data: 2011-08-06
+  descricao: 

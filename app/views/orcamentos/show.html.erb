@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome empresa:</b>
+  <%= @orcamento.nome_empresa %>
+</p>
+
+<p>
+  <b>Cnpj empresa:</b>
+  <%= @orcamento.cnpj_empresa %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @orcamento.valor %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @orcamento.data %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @orcamento.descricao %>
+</p>
+
+
+<%= link_to 'Edit', edit_orcamento_path(@orcamento) %> |
+<%= link_to 'Back', orcamentos_path %>

@@ -1,0 +1,36 @@
+<%= nested_form_for(@ponto) do |f| %>
+  <% if @ponto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ponto.errors.count, "erros") %> impediram esse ponto de ser salvo:</h2>
+
+      <ul>
+        <% @ponto.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li><br/>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data, "Data:" %>&nbsp;
+    <%= f.date_select :data %>
+  </div>
+  <br/>
+
+  <div id="horarios">
+    <%= f.fields_for :horarios do |horario_fields| %>
+      <div class="field">
+        <%= horario_fields.select :funcionario_id, @funcionarios %>&nbsp;
+        <%= horario_fields.text_field :hora, :size => "1" %>&nbsp;:
+        <%= horario_fields.text_field :minuto,  :size => "1" %>
+        <%= horario_fields.link_to_remove "remover" %>
+        <br />
+      </div>
+    <% end %>
+    <%= f.link_to_add "Adicionar", :horarios %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Salvar ponto" %>
+  </div>
+<% end %>

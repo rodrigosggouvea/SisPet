@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  valor: 1.5
+  nome: MyString
+  descricao: MyText
+  vencimento: 2011-08-06
+  paga: false
+
+two:
+  valor: 1.5
+  nome: MyString
+  descricao: MyText
+  vencimento: 2011-08-06
+  paga: false

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  data_admissao: 2011-08-06
+  salario: 1.5
+  data_nasc: 2011-08-06
+  endereco: MyText
+  historico: MyText
+
+two:
+  nome: MyString
+  data_admissao: 2011-08-06
+  salario: 1.5
+  data_nasc: 2011-08-06
+  endereco: MyText
+  historico: MyText

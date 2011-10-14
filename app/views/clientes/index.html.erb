@@ -1,0 +1,21 @@
+<h1>Cientes</h1>
+
+<table class="tabela">
+  <tr>
+    <th width="6%">CNPJ</th>
+    <th>Nome do Cliente</th>
+    <th width="5%"></th>
+  </tr>
+
+<% @clientes.each do |cliente| %>
+  <tr>
+    <td><%= cliente.cnpj %></td>
+    <td><%= cliente.nome %></td>
+    <td><%= link_to 'Exibir', cliente %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Cadastrar Cliente', new_cliente_path %>

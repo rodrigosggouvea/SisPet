@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjetoSispet</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"%>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" %>
+    <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'jquery', 'nested_form' %>
+    <%= csrf_meta_tag %>
+
+  </head>
+  <body>
+    <div class="container">
+      <br/>
+      <div class="barra_superior">
+        <%= render 'application/barra_superior' %>
+        <%= render 'application/barra_lateral' %>
+      </div>
+      <div class="conteudo">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
