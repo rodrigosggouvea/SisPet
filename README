@@ -1,3 +1,11 @@
+SISPET
+
+Sispet is a business management application, where a business owner/employee will be albe to:
+ -> Manage Employees;
+ -> Manage Bills;
+ -> Manage Cients;
+
+Rails' default README:
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
